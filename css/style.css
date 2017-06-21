@@ -1,0 +1,145 @@
+/* Colors */
+
+.gris-claro {
+  background-color: #f2f2f2 !important;
+}
+
+.verde-claro {
+  background-color: #ACE67F !important;
+}
+
+.verde {
+  background-color: #91c46c !important;
+}
+
+.turquesa {
+  background-color: #287d7d !important;
+}
+
+.naval {
+  background-color: #1c344c !important;
+}
+
+.gris-claro-text {
+  color: #f2f2f2 !important;
+}
+
+.verde-claro-text {
+  color: #c63070 !important;
+}
+
+.verde-text {
+  color: #91c46c !important;
+}
+
+.turquesa-text {
+  color: #287d7d !important;
+}
+
+.naval-text {
+  color: #1c344c !important;
+}
+
+
+#logo {
+  height: 64px;
+}
+
+.justify-text {
+  text-align: justify !important;
+}
+
+.left-text {
+  text-align: left !important;
+}
+
+.right-text {
+  text-align: right !important;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  #logo {
+    height: 54px;
+  }
+  
+  .justify-text, .left-text, .right-text {
+    text-align: center !important;
+  }
+}
+
+/* Home */
+#prehome {
+  background-image: url(../images/bg.png);
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: repeat-y;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+/* Profile's section */
+
+html {
+  font-family: 'Amiko', 'Roboto';
+}
+
+#profile {
+  max-width: 200px;
+}
+
+/* Experience's section */
+
+#experience {
+	background-image: url(../images/bg.png);
+	background-size: 100% auto;
+	background-position: center center;
+	background-repeat: repeat-y;
+}
+
+#languages > * {
+  border-color: #aaa;
+  background-color: rgba(28, 125, 125, .2);/*#287d7d*/
+}
+
+#languages > li.collection-item * {
+  border-color: #aaa;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#work > *{
+  border-color: #aaa;
+  background-color: rgba(91, 196, 108, .4); /*#91c46c*/
+}
+
+#studies > * {
+  border-color: #aaa;
+  background-color: rgba(28, 52, 76, .3); /*#1c344c*/
+}
+
+/* label color */
+.input-field label {
+  color: #fff;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 1px 0 0 #fff;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
+
+.input-field textarea[class="materialize-textarea"]:focus {
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 1px 0 0 #fff;
+}
+
+.input-field textarea[class="materialize-textarea"]:focus + label {
+  color: #fff;
+}
