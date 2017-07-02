@@ -18,9 +18,7 @@
 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="icons/Material Icons/">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css" >
     <link href="https://fonts.googleapis.com/css?family=Amiko|Open+Sans" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
@@ -29,28 +27,28 @@
 
   <body>
     <nav class="turquesa">
-      <div class="nav-wrapper container"  id="home">
-        <a href="#about" class="brand-logo" id="alogo" ><img src="images/logo.png" id="logo"></a>
-        <a href="#" class="button-collapse" data-activates="nav-lateral"><i class="material-icons">menu</i></a>
-        <ul id="menunav" class="right hide-on-med-and-down">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <ul class="side-nav" id="nav-lateral" style="width: 200px;">
-          <li>
-            <img src="images/profile.jpg" alt="me" class="responsive-img" />
-          </li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+        <div class="nav-wrapper container"  id="home">
+          <a href="#about" class="brand-logo" id="alogo" ><img src="images/logo.png" id="logo"></a>
+          <a href="#" class="button-collapse" data-activates="nav-lateral"><i class="material-icons">menu</i></a>
+          <ul id="menunav" class="right hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
     </nav>
+    <ul class="side-nav" id="nav-lateral" style="width: 200px;">
+      <li>
+        <img src="images/profile.jpg" alt="me" class="responsive-img" />
+      </li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
     <div id="prehome">
       <div class="section" >
@@ -92,7 +90,7 @@
         </div>
         <div class="row" id="lang-card">
           <div class="col s10 offset-s1">
-            <ul class="collapsible" data-collapsible="accordion">
+            <ul class="collapsible popout" data-collapsible="accordion">
               <li>
                 <div class="collapsible-header center">
                   <i class="material-icons">code</i>
@@ -200,7 +198,7 @@
     <footer class="page-footer green darken-1">
       <div class="container">
         <div class="row">
-          <div class="col s12 m6 center">
+          <div id="contact" class="col s12 m6 center">
             <form action="index.php" method="POST">
               <h5 class="white-text">Contact Me</h5>
               <div class="container">
