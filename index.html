@@ -18,9 +18,7 @@
 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="icons/Material Icons/">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css" >
     <link href="https://fonts.googleapis.com/css?family=Amiko|Open+Sans" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
@@ -28,40 +26,38 @@
   </head>
 
   <body>
+    <!-- navigation bar -->
     <nav class="turquesa">
-      <div class="nav-wrapper container"  id="home">
-        <a href="#about" class="brand-logo" id="alogo" ><img src="images/logo.png" id="logo"></a>
-        <a href="#" class="button-collapse" data-activates="nav-lateral"><i class="material-icons">menu</i></a>
-        <ul id="menunav" class="right hide-on-med-and-down">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <ul class="side-nav" id="nav-lateral" style="width: 200px;">
-          <li>
-            <img src="images/profile.jpg" alt="me" class="responsive-img" />
-          </li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <div id="prehome">
-      <div class="section" >
-        <div class="container " >
-          <h1 class="center">German <br />Robayo</h1>
-          <div class="row">
-            <div class="col s6 offset-s3">
-              <h5 class="center">Your web page <br>in the best hands</h5>
-            </div>
-          </div>
+        <div class="nav-wrapper container"  id="home">
+          <a href="#about" class="brand-logo" id="alogo" ><img src="images/logo.png" id="logo"></a>
+          <a href="#" class="button-collapse" data-activates="nav-lateral"><i class="material-icons">menu</i></a>
+          <ul id="menunav" class="right hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
+    </nav>
+    <ul class="side-nav" id="nav-lateral" style="width: 200px;">
+      <li>
+        <img src="images/profile.jpg" alt="me" class="responsive-img" />
+      </li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div id="prehome" class="parallax-container valign-wrapper center-align">
+      <div class="container">
+        <h1 class="center">German Robayo</h1>
+        <h5 class="center">Your web page <br />in the best hands</h5>
+      </div>
+      <div class="parallax">
+        <img src="images/bg.png" alt="bg" />
       </div>
     </div>
 
@@ -92,7 +88,7 @@
         </div>
         <div class="row" id="lang-card">
           <div class="col s10 offset-s1">
-            <ul class="collapsible" data-collapsible="accordion">
+            <ul class="collapsible popout" data-collapsible="accordion">
               <li>
                 <div class="collapsible-header center">
                   <i class="material-icons">code</i>
@@ -173,54 +169,128 @@
     </div>
 
 
-    <div  class="section turquesa gris-claro-text" id="portfolio">
+    <div  class="section green darken-1 gris-claro-text" id="portfolio">
       <div class="row">
         <div class="col s12 center gris-claro-text">
           <h3>Portfolio</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col s12 m6 offset-m3 l4 offset-l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/chess1.png">
-            </div>
-            <div class="card-content black-text">
+        <div class="col s12 m6 l4">
+          <div class="card naval">
+            <div class="card-content white-text">
               <span class="card-title">Solitaire Chess</span>
-              <p>Solitaire Chess is a logic game based on the traditional chess.</p>
+              <p>Solitaire Chess is a logic game based on the traditional Chess</p>
             </div>
             <div class="card-action">
-              <a href="https://github.com/german1608/solitairechess.git" target="_blank">See on GitHub</a>
+              <a class="waves-effect waves-light btn modal-trigger green darken-1" href="#solitaire-chess">See more</a>
+              <div id="solitaire-chess" class="modal black-text">
+                <div class="modal-content">
+                  <div class="row">
+                    <div class="col s12">
+                      <h4>Solitaire Chess</h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12 m6">
+                      <img src="images/chess1.png" alt="solitaire-chess-img" class="left responsive-img" />
+                    </div>
+                    <div class="col s12 m6">
+                      <p>Solitaire Chess is a logic game based on the traditional Chess. On this single player game, the main objective is to eliminate all but one piece of the board in the required time. If you can't make another move or the time limit is out, you lose. Other way, you win. </p>
+                      <a href="https://german1608.github.io/solitairechess/" class="waves-effect waves-green btn-flat modal-action modal-close" target="_blank">See more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card naval">
+            <div class="card-content white-text">
+              <span class="card-title">Quote Generator</span>
+              <p>A random quote generator for a Free Code Camp project.</p>
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn modal-trigger green darken-1" href="#quote-generator">See more</a>
+              <div id="quote-generator" class="modal black-text">
+                <div class="modal-content">
+                  <div class="row">
+                    <div class="col s12">
+                      <h4>Quote Generator</h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12 m6">
+                      <img src="images/quote.png" alt="solitaire-chess-img" class="left-align responsive-img" />
+                    </div>
+                    <div class="col s12 m6">
+                      <p>This random quote generator is a simply webapp that gives you totally random quotes using API. It also has the functionality of tweet your desired quote.</p>
+                      <a href="https://german1608.github.io/quote-generator/" class="waves-effect waves-green btn-flat modal-action modal-close" target="_blank">See more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 offset-m3 l4">
+          <div class="card naval">
+            <div class="card-content white-text">
+              <span class="card-title">Local Weather</span>
+              <p>A simple web app that shows your current location's weather (doesn't work on mobile yet).</p>
+            </div>
+            <div class="card-action">
+              <!-- Modal Trigger -->
+              <a class="waves-effect waves-light btn modal-trigger green darken-1" href="#local-weather">see more</a>
+              
+              <!-- Modal Structure -->
+              <div id="local-weather" class="modal black-text">
+                <div class="modal-content">
+                  <div class="row">
+                    <div class="col s12">
+                      <h4>Local Weather</h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12 m6">
+                      <img src="images/weather.png" alt="weather-img" class="left-align responsive-img" />
+                    </div>
+                    <div class="col s12 m6">
+                      <p>Knowing the current weather weather in your area is useful, it allows you to be prepared for the entire day. With this webapp, this is as easy as follow the footer link</p>
+                      <a href="https://german1608.github.io/local-weather/" class="waves-effect waves-green btn-flat modal-action modal-close" target="_blank">See more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="page-footer green darken-1">
+    <footer class="page-footer turquesa">
       <div class="container">
         <div class="row">
-          <div class="col s12 m6 center">
-            <form action="index.php" method="POST">
-              <h5 class="white-text">Contact Me</h5>
-              <div class="container">
-                <div class="input-field">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" id="name" required="required" />
-                </div>
-                <div class="input-field">
-                  <label for="email">Your Email</label>
-                  <input type="text" name="email" id="email" required="required" />
-                </div>
-                <div class="input-field">
-                  <textarea name="comments" id="comments" class="materialize-textarea" required="required"></textarea>
-                  <label for="comments">Your comments</label>
-                </div>
-                <div>
-                  <input type="submit" class="btn waves-effect turquesa" id="submit" name="submit" value="submit" />
-                </div>
+          <div id="contact" class="col s12 m6 center">
+            <h5 class="white-text">Contact Me</h5>
+            <div class="container">
+              <div class="input-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required="required" />
               </div>
-            </form>
+              <div class="input-field">
+                <label for="email">Your Email</label>
+                <input type="text" name="email" id="email" required="required" />
+              </div>
+              <div class="input-field">
+                <textarea name="comments" id="comments" class="materialize-textarea" required="required"></textarea>
+                <label for="comments">Your comments</label>
+              </div>
+              <div>
+                <a class="btn-flat waves-effect waves-light turquesa white-text" id="submit" href="#">submit</a>
+              </div>
+            </div>
           </div>
           <div class="col s6 m6">
             <h5 class="white-text">Main Navigation</h5>
@@ -244,7 +314,7 @@
       </div>
       <div class="footer-copyright">
         <div class="container center">
-          © 2017 Copyright <br>All rights reserved
+          Made by German Robayo
         </div>
       </div>
     </footer>
