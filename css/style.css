@@ -70,12 +70,11 @@
 
 /* Home */
 #prehome {
-  background-image: url(../images/bg.png);
+  /*background-image: url(../images/bg.png);
   background-size: 100% auto;
   background-position: center center;
-  background-repeat: repeat-y;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  background-repeat: repeat-y;*/
+  height: 75vh;
 }
 
 /* Profile's section */
@@ -117,6 +116,16 @@ html {
   background-color: rgba(28, 52, 76, .3); /*#1c344c*/
 }
 
+#portfolio .card {
+  background-image: url(../images/bg.png);
+  background-size: cover;
+  background-position: right center;
+}
+
+.modal .modal-content {
+  padding: 15px;
+}
+
 /* label color */
 .input-field label {
   color: #fff;
@@ -143,6 +152,12 @@ html {
 .input-field textarea[class="materialize-textarea"]:focus + label {
   color: #fff;
 }
+
+input, textarea {
+  color: white;
+}
+
+
 
 @media only screen and (min-width: 601px)  {
 

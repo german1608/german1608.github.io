@@ -1,5 +1,7 @@
 $(document).ready(function () {
   $(".button-collapse").sideNav();
+  $('.parallax').parallax();
+  $('.modal').modal();
   // Select all links with hashes
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
@@ -39,5 +41,14 @@ $(document).ready(function () {
 
   $('ul.side-nav a').click( function() {
     $('.button-collapse').sideNav('hide');
-  })
+  });
+
+  $('.gcard').hover(function() {
+    // console.log($(this), $(this).find('.gcard-default'));
+    $(this).find('.gcard-default').fadeOut('fast');
+    $(this).find('.gcard-active').fadeIn('fast');
+  }, function() {
+    $(this).find('.gcard-active').fadeOut('fast');
+    $(this).find('.gcard-default').fadeIn('fast');
+  });
 });
