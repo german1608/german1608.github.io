@@ -43,12 +43,22 @@ $(document).ready(function () {
     $('.button-collapse').sideNav('hide');
   });
 
-  $('.gcard').hover(function() {
-    // console.log($(this), $(this).find('.gcard-default'));
-    $(this).find('.gcard-default').fadeOut('fast');
-    $(this).find('.gcard-active').fadeIn('fast');
-  }, function() {
-    $(this).find('.gcard-active').fadeOut('fast');
-    $(this).find('.gcard-default').fadeIn('fast');
+  $('#submit').click(function(e){
+    let $inputs = $("input, textarea").not('#submit');
+    // Checking for empty inputs
+    let exit = false;
+    $inputs.each(function(){
+      if (!$(this).val()) {
+        exit = true;
+      }
+    });
+
+    // Exit if there are empty inputs.
+    if (exit) return;
+
+    // Building the mail body
+    let body = `Hello German.\n${$($inputs[0]).val()} wants to contact you with the subject ${$($inputs[1]).val()}.\nContact him/her at ${$($inputs[2]).val()}`;
+    let link = `mailto:germanrobayo33@gmail.com?subject=${encodeURI('Contact Email')}&body=${encodeURI(body)}`;
+    // window.open('mailto:germanrobayo33@gmail.com');
   });
 });
