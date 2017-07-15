@@ -43,22 +43,11 @@ $(document).ready(function () {
     $('.button-collapse').sideNav('hide');
   });
 
-  $('#submit').click(function(e){
-    var $inputs = $("input, textarea").not('#submit');
-    // Checking for empty inputs
-    var exit = false;
-    $inputs.each(function(){
-      if (!$(this).val()) {
-        exit = true;
-      }
+  $('#contact-form').submit(function(e){
+    e.preventDefault();
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+      alert("Thank you!");
     });
-
-    // Exit if there are empty inputs.
-    if (exit) return;
-
-    // Building the mail body
-    var body = `Hello German.\n${$($inputs[0]).val()} wants to contact you with the subject ${$($inputs[1]).val()}.\nContact him/her at ${$($inputs[2]).val()}`;
-    var link = `mailto:germanrobayo33@gmail.com?subject=${encodeURI('Contact Email')}&body=${encodeURI(body)}`;
-    // window.open('mailto:germanrobayo33@gmail.com');
   });
 });
