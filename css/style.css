@@ -95,6 +95,9 @@ html {
 	background-position: center center;
 	background-repeat: repeat-y;
 }
+#experience:focus {
+  border: none;
+}
 
 #languages > * {
   border-color: #aaa;
@@ -127,17 +130,17 @@ html {
 }
 
 /* label color */
-.input-field label {
-  color: #fff;
+.input-field label{
+  color: #fff !important;
 }
 /* label focus color */
 .input-field input[type=text]:focus + label {
-  color: #000;
+  color: #fff;
 }
 /* label underline focus color */
 .input-field input[type=text]:focus {
-  border-bottom: 1px solid #fff;
-  box-shadow: 0 1px 0 0 #fff;
+  border-bottom: 1px solid #fff !important;
+  box-shadow: 0 1px 0 0 #fff !important;
 }
 /* icon prefix focus color */
 .input-field .prefix.active {
@@ -160,6 +163,7 @@ input, textarea {
 footer.page-footer {
   margin-top: 0;
 }
+
 
 
 @media only screen and (min-width: 601px)  {
