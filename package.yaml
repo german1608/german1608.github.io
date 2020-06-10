@@ -1,5 +1,5 @@
 name:                german1608-github-io
-version:             0.1.0.0
+version:             0.0.1
 github:              "german1608/german1608-github-io"
 license:             BSD3
 author:              "Germán Robayo"
@@ -17,32 +17,13 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/german1608/german1608-github-io#readme>
+description:         My personal website, <https://github.com/german1608/german1608-github-io#readme>
 
 dependencies:
 - base >= 4.7 && < 5
+- hakyll >= 4.13.3.0
 
 library:
   source-dirs: src
-
-executables:
-  german1608-github-io-exe:
-    main:                Main.hs
-    source-dirs:         app
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - german1608-github-io
-
-tests:
-  german1608-github-io-test:
-    main:                Spec.hs
-    source-dirs:         test
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - german1608-github-io
+  ghc-options:
+  - -Wall

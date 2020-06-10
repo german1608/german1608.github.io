@@ -4,11 +4,11 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7f1c222265b27ebbccccda2752a4bcc8aad769249e9d98a8678a18d109ff2c9a
+-- hash: 1102dc01830909bf9467c3a42a891cd94f4262e3f565a882d807cabdf29a26e1
 
 name:           german1608-github-io
-version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/german1608/german1608-github-io#readme>
+version:        0.0.1
+description:    My personal website, <https://github.com/german1608/german1608-github-io#readme>
 homepage:       https://github.com/german1608/german1608-github-io#readme
 bug-reports:    https://github.com/german1608/german1608-github-io/issues
 author:         Germán Robayo
@@ -32,31 +32,8 @@ library
       Paths_german1608_github_io
   hs-source-dirs:
       src
+  ghc-options: -Wall
   build-depends:
       base >=4.7 && <5
-  default-language: Haskell2010
-
-executable german1608-github-io-exe
-  main-is: Main.hs
-  other-modules:
-      Paths_german1608_github_io
-  hs-source-dirs:
-      app
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      base >=4.7 && <5
-    , german1608-github-io
-  default-language: Haskell2010
-
-test-suite german1608-github-io-test
-  type: exitcode-stdio-1.0
-  main-is: Spec.hs
-  other-modules:
-      Paths_german1608_github_io
-  hs-source-dirs:
-      test
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      base >=4.7 && <5
-    , german1608-github-io
+    , hakyll >=4.13.3.0
   default-language: Haskell2010
