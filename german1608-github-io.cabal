@@ -1,0 +1,62 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 7f1c222265b27ebbccccda2752a4bcc8aad769249e9d98a8678a18d109ff2c9a
+
+name:           german1608-github-io
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/german1608/german1608-github-io#readme>
+homepage:       https://github.com/german1608/german1608-github-io#readme
+bug-reports:    https://github.com/german1608/german1608-github-io/issues
+author:         Germán Robayo
+maintainer:     germanrobayo33@gmail.com
+copyright:      2020 Germán Robayo
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/german1608/german1608-github-io
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_german1608_github_io
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable german1608-github-io-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_german1608_github_io
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , german1608-github-io
+  default-language: Haskell2010
+
+test-suite german1608-github-io-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_german1608_github_io
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , german1608-github-io
+  default-language: Haskell2010
